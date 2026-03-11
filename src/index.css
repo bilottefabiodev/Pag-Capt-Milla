@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-start: #950f0f;
+  --color-brand-middle: #ce1919;
+  --color-brand-end: #ff4a4a;
+  --color-brand-dark: #0A0A0A;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, var(--color-brand-start), var(--color-brand-middle), var(--color-brand-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: white;
+  margin: 0;
+  font-family: var(--font-sans);
+}
