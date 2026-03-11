@@ -6,10 +6,21 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     icon?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, icon = true, className = '', ...props }) => {
+export const Button: React.FC<ButtonProps> = ({ children, icon = true, className = '', onClick, ...props }) => {
+
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (onClick) {
+            onClick(e);
+        } else {
+            // Se nenhum evento click for definido (na landing page), redireciona automaticamente pro grupo!
+            window.location.href = '/grupo';
+        }
+    };
+
     return (
         <button
             className={`group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-linear-to-r from-[var(--color-brand-start)] via-[var(--color-brand-middle)] to-[var(--color-brand-end)] px-8 py-4 font-bold text-white transition-all hover:scale-105 active:scale-95 ${className}`}
+            onClick={handleClick}
             {...props}
         >
             <div className="absolute inset-0 bg-white/20 opacity-0 transition-opacity group-hover:opacity-100" />

@@ -9,6 +9,8 @@ import { Discover } from './components/Discover';
 import { Instructor } from './components/Instructor';
 import { Footer } from './components/Footer';
 
+import { RedirectGroup } from './components/RedirectGroup';
+
 function LandingPage() {
   return (
     <div className="flex flex-col w-full bg-[#0A0A0A] overflow-x-hidden min-h-screen text-white font-sans selection:bg-[var(--color-brand-middle)] selection:text-white">
@@ -29,6 +31,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/grupo" element={<RedirectGroup />} />
       </Routes>
     </BrowserRouter>
   );
