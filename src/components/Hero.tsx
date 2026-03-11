@@ -8,11 +8,11 @@ export const Hero = () => {
             {/* Background Image / Overlay */}
             <div className="absolute inset-0 z-0 bg-[#0A0A0A]">
                 {/* Limit height on mobile to make text readability perfect on black background below her */}
-                <div className="absolute top-0 right-0 w-[85%] md:w-[60%] md:right-0 h-[55vh] md:h-full md:left-auto">
+                <div className="absolute top-0 right-[-10%] w-[100%] md:w-[60%] md:right-0 h-[48vh] md:h-full md:left-auto">
                     <img
                         src="/Mila.jpeg"
                         alt="Mila Moraes"
-                        className="w-full h-full object-cover object-[75%_top] md:object-top opacity-75 md:opacity-80"
+                        className="w-full h-full object-cover object-[70%_top] md:object-top opacity-75 md:opacity-80"
                         style={{ maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}
                     />
                 </div>
@@ -58,12 +58,12 @@ export const Hero = () => {
                 </div>
 
                 {/* Spacer on mobile to make text start under her face */}
-                <div className="h-[5vh] min-h-[40px] md:hidden shrink-0 w-full" />
+                <div className="h-[14vh] min-h-[100px] md:hidden shrink-0 w-full" />
 
                 {/* Bottom section: Headline and Copy (pushed down) */}
-                <div className="flex flex-col space-y-5 md:mt-8 relative z-30 w-full pb-4">
+                <div className="flex flex-col space-y-4 md:space-y-5 md:mt-8 relative z-30 w-full pb-4">
                     {/* Headline */}
-                    <h1 className="text-[36px] md:text-5xl lg:text-[54px] font-extrabold tracking-tight text-white leading-[1.05] mb-2">
+                    <h1 className="text-[30px] md:text-5xl lg:text-[54px] font-extrabold tracking-tight text-white leading-[1.1] mb-2">
                         Existe um <span className="text-[var(--color-brand-start)]">código invisível</span> por trás das histórias que você vive no amor.
                     </h1>
 
