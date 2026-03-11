@@ -8,17 +8,17 @@ export const Hero = () => {
             {/* Background Image / Overlay */}
             <div className="absolute inset-0 z-0 bg-[#0A0A0A]">
                 {/* Limit height on mobile to make text readability perfect on black background below her */}
-                <div className="absolute top-0 right-[-5%] w-[105%] md:w-[60%] md:right-0 h-[65vh] md:h-full md:left-auto">
+                <div className="absolute top-0 right-0 w-[85%] md:w-[60%] md:right-0 h-[55vh] md:h-full md:left-auto">
                     <img
                         src="/Mila.jpeg"
                         alt="Mila Moraes"
-                        className="w-full h-full object-cover object-[88%_top] md:object-top opacity-75 md:opacity-80"
-                        style={{ maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}
+                        className="w-full h-full object-cover object-[75%_top] md:object-top opacity-75 md:opacity-80"
+                        style={{ maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}
                     />
                 </div>
 
                 {/* Gradient for mobile: dark text shadow on the left for badges */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent md:hidden z-10 w-[80%]" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent md:hidden z-10 w-[100%]" />
 
                 {/* Gradient for desktop: dark on the left fading to transparent on the right */}
                 <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent z-10" />
